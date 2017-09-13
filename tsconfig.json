@@ -1,8 +1,10 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
+        "module": "system",
         "target": "es5",
         "noImplicitAny": false,
-        "sourceMap": true
+        "sourceMap": true,
+        "sourceRoot": "ts",
+        "outDir": "js"
     }
 }
