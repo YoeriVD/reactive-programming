@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
         "module": "system",
-        "target": "es5",
+        "moduleResolution": "node",
+        "target": "es6",
         "noImplicitAny": false,
         "sourceMap": true,
         "sourceRoot": "ts",
