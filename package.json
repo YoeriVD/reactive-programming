@@ -1,0 +1,25 @@
+{
+  "name": "reactive-programming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoeriVD/reactive-programming.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YoeriVD/reactive-programming/issues"
+  },
+  "homepage": "https://github.com/YoeriVD/reactive-programming#readme",
+  "devDependencies": {
+    "typescript": "^2.5.2"
+  },
+  "dependencies": {
+    "rxjs": "^5.1.0"
+  }
+}
