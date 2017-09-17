@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reactive programming demo</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        a>p:hover{
+            text-decoration: underline;
+        }
+        a p:first-child{
+            font-weight: bold;
+        }
+        li{
+            margin: 2px;
+            border : 1px solid gray;
+            border-radius: 2px;
+        }
+        #wrap {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #left_col {
+            float: left;
+            width: 50%;
+        }
+
+        #right_col {
+            float: right;
+            width: 50%;
+        }
+        li{
+            display: block;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="search" id="search" placeholder="begin met typen .." />
+    <div id="wrap">
+        <div id="left_col">
+            <ul id="posts"></ul>
+        </div>
+        <div id="right_col">
+            <ul id="comments"></ul>
+        </div>
+    </div>
+    <ul>
+
+    </ul>
+
+</body>
+<script src="node_modules/systemjs/dist/system.js"></script>
+<script>
+    System.config({
+        map: {
+            rxjs: 'node_modules/rxjs',
+            jquery: 'node_modules/jquery/dist/jquery.js'
+        },
+        packages: {
+            rxjs: {
+                defaultExtension: 'js'
+            },
+            jquery: {
+                defaultExtension: 'js'
+            }
+        }
+    });
+    SystemJS.import('/js/blog.js');
+
+</script>
+
+</html>

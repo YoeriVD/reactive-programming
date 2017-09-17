@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reactive programming demo</title>
+    <style>
+        .highlight{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input placeholder="begin met typen .." />
+    <ul>
+
+    </ul>
+
+</body>
+<script src="node_modules/systemjs/dist/system.js"></script>
+<script>
+    System.config({
+        map: {
+            rxjs: 'node_modules/rxjs',
+            jquery: 'node_modules/jquery/dist/jquery.js'
+        },
+        packages: {
+            rxjs: {
+                defaultExtension: 'js'
+            },
+            jquery: {
+                defaultExtension: 'js'
+            }
+        }
+    });
+    SystemJS.import('/js/autocomplete.js');
+
+</script>
+
+</html>
