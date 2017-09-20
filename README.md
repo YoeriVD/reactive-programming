@@ -6,6 +6,8 @@ demos for my talk about reactive programming
 
 `git clone http://github.com/YoeriVD/reactive-programming`
 
+`cd reactive-programming`
+
 `npm install -g @infosupport/kc-cli`
 
 `kc serve -o`
