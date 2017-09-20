@@ -16,6 +16,8 @@ demos for my talk about reactive programming
 
 `git clone http://github.com/YoeriVD/reactive-programming`
 
+`cd reactive-programming/demo`
+
 `npm install`
 
 `http-server`
